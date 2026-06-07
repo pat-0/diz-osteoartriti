@@ -8,34 +8,34 @@ export default function HomePage() {
         className="relative overflow-hidden py-24 md:py-32 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/images/hero-bg.png')" }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/30"></div>
         <div className="container mx-auto px-4 relative">
-          <div className="max-w-4xl mx-auto">
-            <div className="inline-block px-4 py-2 bg-white/20 text-white backdrop-blur-sm rounded-full text-sm font-semibold mb-4 border border-white/30">
-              Fizik Tedavi ve Rehabilitasyon
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <div className="max-w-xl mx-auto text-center">
+            <h1
+              className="text-5xl md:text-7xl font-bold mb-6"
+              style={{
+                background: "linear-gradient(to right, #2DD4BF, #5EEAD4, #14B8A6)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                color: "transparent",
+                textShadow: "0 0 50px rgba(45, 212, 191, 0.6)",
+                animation: "shine 3s linear infinite",
+                backgroundSize: "200% auto"
+              }}
+            >
               Diz Osteoartriti
-              <span className="block text-cyan-300 mt-2">Anlama ve Yönetim</span>
             </h1>
-            <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl">
-              Diz kireçlenmesi hakkında bilgi alın, tedavi seçeneklerini keşfedin ve
-              rehabilitasyon egzersizleriyle yaşam kalitenizi artırın.
+            <p
+              className="text-lg md:text-xl text-white leading-relaxed font-medium opacity-0 animate-fade-in"
+              style={{
+                textShadow: "2px 2px 10px rgba(0,0,0,0.9)",
+                animation: "fade-in 1s ease-out 0.5s forwards"
+              }}
+            >
+              Diz OA (Diz Osteoartriti), diz eklemindeki kıkırdağın zamanla aşınması ve eklemde dejeneratif
+              değişikliklerin gelişmesiyle ortaya çıkan kronik bir eklem hastalığıdır. Halk arasında {"dizde kireçlenme"} olarak bilinir.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/oa-nedir"
-                className="px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary-600 transition-colors shadow-md hover:shadow-lg"
-              >
-                OA Nedir?
-              </Link>
-              <Link
-                href="/egzersizler"
-                className="px-8 py-3 bg-white text-primary border-2 border-primary rounded-lg font-semibold hover:bg-primary-50 transition-colors"
-              >
-                Egzersiz Programı
-              </Link>
-            </div>
           </div>
         </div>
       </section>
