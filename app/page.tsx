@@ -4,15 +4,21 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-white">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-16 md:py-24">
-        <div className="absolute inset-0 medical-gradient opacity-10"></div>
+      <section
+        className="relative overflow-hidden py-24 md:py-32 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/hero-bg.png')" }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent"></div>
         <div className="container mx-auto px-4 relative">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="inline-block px-4 py-2 bg-white/20 text-white backdrop-blur-sm rounded-full text-sm font-semibold mb-4 border border-white/30">
+              Fizik Tedavi ve Rehabilitasyon
+            </div>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Diz Osteoartriti
-              <span className="block text-primary mt-2">Anlama ve Yönetim</span>
+              <span className="block text-cyan-300 mt-2">Anlama ve Yönetim</span>
             </h1>
-            <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+            <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl">
               Diz kireçlenmesi hakkında bilgi alın, tedavi seçeneklerini keşfedin ve
               rehabilitasyon egzersizleriyle yaşam kalitenizi artırın.
             </p>
