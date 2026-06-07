@@ -219,15 +219,13 @@ export default function EgzersizlerPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-white py-12">
-      <div className="container mx-auto px-4">
+    <div className="relative min-h-screen py-12 bg-cover bg-center bg-fixed bg-no-repeat" style={{ backgroundImage: "url('/images/egzersizler-bg.png')" }}>
+      <div className="absolute inset-0 bg-white/70"></div>
+      <div className="relative container mx-auto px-4">
         {/* Page Header */}
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <div className="inline-block px-4 py-2 bg-indigo-100 text-secondary rounded-full text-sm font-semibold mb-4">
-            Rehabilitasyon Programı
-          </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Diz OA Egzersiz Programı
+            Diz Osteoarthritis Egzersiz Önerileri
           </h1>
           <p className="text-xl text-gray-700 leading-relaxed">
             Diz osteoartriti için egzersizler; ağrıyı azaltmak, eklem hareket açıklığını korumak,
