@@ -36,63 +36,24 @@ export default function OaNedirPage() {
           </div>
         </section>
 
-        {/* What Happens in Knee OA */}
-        <section className="max-w-4xl mx-auto mb-12">
-          <h2 className="section-title">Diz OA'sında Olanlar</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              {
-                title: "Kıkırdak İncelmesi",
-                description: "Eklem kıkırdağı zamanla incelir ve zayıflar.",
-                icon: "🦴"
-              },
-              {
-                title: "Kemik Sürtünmesi",
-                description: "Kemikler birbirine sürtünür ve ağrı oluşur.",
-                icon: "🔴"
-              },
-              {
-                title: "Osteofit Oluşumu",
-                description: "Kenarlarda kemik büyümeleri (osteofit) gelişir.",
-                icon: "⚡"
-              },
-              {
-                title: "Sinoviyal İltihabı",
-                description: "Eklem zarı iltihaplanabilir ve şişebilir.",
-                icon: "🌡️"
-              },
-            ].map((item, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-md border-l-4 border-primary">
-                <div className="flex items-start">
-                  <div className="text-3xl mr-4">{item.icon}</div>
-                  <div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                    <p className="text-gray-600">{item.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
         {/* Risk Factors */}
         <section className="max-w-4xl mx-auto mb-12">
           <h2 className="section-title">Risk Faktörleri</h2>
-          <p className="text-gray-700 mb-6">
-            Bazı faktörler diz OA gelişme riskini artırabilir:
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+          <div className="max-w-2xl mx-auto space-y-4">
             {[
-              { name: "Yaş", description: "Risk yaşla birlikte artar", color: "bg-blue-100 text-blue-800" },
-              { name: "Obezite", description: "Ekstra kilo dizlere ek yük bindirir", color: "bg-red-100 text-red-800" },
-              { name: "Cinsiyet", description: "Kadınlarda daha sık görülür", color: "bg-pink-100 text-pink-800" },
-              { name: "Genetik", description: "Aile öyküsü riski artırır", color: "bg-purple-100 text-purple-800" },
-              { name: "Travma", description: "Diz travmaları gelecekte OA'ya yol açabilir", color: "bg-orange-100 text-orange-800" },
-              { name: "Mesleksel", description: "Tekrarlayan diz stresi riski artırır", color: "bg-green-100 text-green-800" },
+              "İleri yaş",
+              "Obezite",
+              "Daha önce geçirilmiş diz yaralanmaları",
+              "Kas güçsüzlüğü",
+              "Genetik yatkınlık",
+              "Tekrarlayan zorlayıcı aktiviteler",
             ].map((factor, index) => (
-              <div key={index} className={`${factor.color} rounded-lg p-4`}>
-                <div className="font-bold text-gray-900 mb-1">{factor.name}</div>
-                <div className="text-sm opacity-80">{factor.description}</div>
+              <div key={index} className="flex items-start bg-white rounded-lg p-4 shadow-sm border-l-4 border-primary">
+                <span className="w-7 h-7 bg-blue-100 text-primary rounded-full flex items-center justify-center text-sm font-bold mr-3 shrink-0">
+                  {index + 1}
+                </span>
+                <span className="text-gray-700 leading-relaxed">{factor}</span>
               </div>
             ))}
           </div>
