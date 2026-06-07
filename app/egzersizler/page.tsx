@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function EgzersizlerPage() {
-  // Exercise data from DOCX
+  // Exercise data from DOCX (2) - All exercises with images
   const strengtheningExercises = [
     {
       id: 1,
@@ -69,45 +69,153 @@ export default function EgzersizlerPage() {
   ];
 
   const stretchingExercises = [
-    "Hamstring germe",
-    "Quadriceps germe",
-    "Baldır (gastroknemius) germe",
-    "Kalça fleksör germe",
-    "IT bant germe"
+    {
+      name: "Hamstring Germe",
+      image: "/images/exercises/23.jpg",
+      description: "Arka uyluk kaslarını germek için"
+    },
+    {
+      name: "Quadriceps Germe",
+      image: "/images/exercises/26.jpg",
+      description: "Ön uyluk kaslarını germek için"
+    },
+    {
+      name: "Baldır (Gastroknemius) Germe",
+      image: "/images/exercises/29.jpg",
+      description: "Baldır kaslarını germek için"
+    },
+    {
+      name: "Kalça Fleksör Germe",
+      image: "/images/exercises/32.jpg",
+      description: "Kalça ön kaslarını germek için"
+    },
+    {
+      name: "IT Bant Germe",
+      image: "/images/exercises/35.jpg",
+      description: "Dış yan bantı germek için"
+    }
   ];
 
   const aerobicExercises = [
-    "Tempolu yürüyüş",
-    "Sabit bisiklet",
-    "Eliptik bisiklet",
-    "Yüzme",
-    "Su içinde yürüme",
-    "Düşük etkili aerobik egzersizler"
+    {
+      name: "Tempolu Yürüyüş",
+      image: "/images/exercises/38.jpg",
+      description: "Düşük etkili kardiyo"
+    },
+    {
+      name: "Sabit Bisiklet",
+      image: "/images/exercises/41.jpeg",
+      description: "Diz yükünü azaltan egzersiz"
+    },
+    {
+      name: "Eliptik Bisiklet",
+      image: "/images/exercises/44.png",
+      description: "Tüm vücut egzersizi"
+    },
+    {
+      name: "Yüzme",
+      image: "/images/exercises/47.jpg",
+      description: "Su içinde eklemsiz egzersiz"
+    },
+    {
+      name: "Su İçinde Yürüme",
+      image: "/images/exercises/50.jpg",
+      description: "Havuz egzersizi"
+    },
+    {
+      name: "Düşük Etkili Aerobik",
+      image: "/images/exercises/53.webp",
+      description: "Yumuşak kardiyo"
+    }
   ];
 
   const neuromuscularExercises = [
-    "Mini squat",
-    "Öne ve yana adım alma",
-    "Otur-kalk çalışmaları",
-    "Köprü kurma",
-    "Fonksiyonel merdiven çıkma"
+    {
+      name: "Mini Squat",
+      image: "/images/exercises/56.jpg",
+      description: "Kısa çömelmeler"
+    },
+    {
+      name: "Öne ve Yana Adım Alma",
+      image: "/images/exercises/59.webp",
+      description: "Fonksiyonel hareketler"
+    },
+    {
+      name: "Otur-Kalk Çalışmaları",
+      image: "/images/exercises/62.jpg",
+      description: "Günlük yaşam aktivitesi"
+    },
+    {
+      name: "Köprü Kurma",
+      image: "/images/exercises/65.jpg",
+      description: "Kalça güçlendirme"
+    },
+    {
+      name: "Fonksiyonel Merdiven Çıkma",
+      image: "/images/exercises/68.jpg",
+      description: "Merdiven egzersizi"
+    }
   ];
 
   const balanceExercises = [
-    "Tek ayak üzerinde durma",
-    "Yastık veya denge pedi üzerinde durma",
-    "Tandem duruş (bir ayağı diğerinin önüne koyma)",
-    "Denge tahtası çalışmaları",
-    "Top yakalama ve atma aktiviteleri"
+    {
+      name: "Tek Ayak Üzerinde Durma",
+      image: "/images/exercises/71.webp",
+      description: "Denge geliştirme"
+    },
+    {
+      name: "Yastık Üzerinde Durma",
+      image: "/images/exercises/74.jpg",
+      description: "Denge pedi egzersizi"
+    },
+    {
+      name: "Tandem Duruş",
+      image: "/images/exercises/77.jpg",
+      description: "Bir ayağı diğerinin önüne koyma"
+    },
+    {
+      name: "Denge Tahtası",
+      image: "/images/exercises/80.jpg",
+      description: "Denge tahtası çalışmaları"
+    },
+    {
+      name: "Top Yakalama/Atma",
+      image: "/images/exercises/83.webp",
+      description: "Motor kontrol egzersizi"
+    }
   ];
 
   const waterExercises = [
-    "Havuz içinde yürüme",
-    "Su içinde diz çekme",
-    "Su içinde kalça açma-kapama",
-    "Su içinde mini squat",
-    "Su içinde bisiklet hareketi",
-    "Su direncine karşı bacak egzersizleri"
+    {
+      name: "Havuz İçinde Yürüme",
+      image: "/images/exercises/86.jpg",
+      description: "Su içinde yürüme"
+    },
+    {
+      name: "Su İçinde Diz Çekme",
+      image: "/images/exercises/89.jpeg",
+      description: "Su içinde bacak hareketi"
+    },
+    {
+      name: "Su İçinde Kalça Açma-Kapama",
+      image: "/images/exercises/92.jpg",
+      description: "Su içinde kalça egzersizi"
+    },
+    {
+      name: "Su İçinde Mini Squat",
+      image: "/images/exercises/95.jpg",
+      description: "Su içinde çömelme"
+    },
+    {
+      name: "Su İçinde Bisiklet Hareketi",
+      image: "/images/exercises/98.jpg",
+      description: "Su içinde bisiklet"
+    },
+    {
+      name: "Su Direncine Karşı",
+      image: "/images/exercises/86.jpg",
+      description: "Bacak direnç egzersizleri"
+    }
   ];
 
   return (
@@ -186,59 +294,88 @@ export default function EgzersizlerPage() {
         </section>
 
         {/* Stretching Exercises */}
-        <section className="max-w-4xl mx-auto mb-12">
+        <section className="max-w-6xl mx-auto mb-12">
           <h2 className="section-title">🧘 Germe Egzersizleri</h2>
           <p className="text-gray-700 mb-8">
             Esneklik egzersizleri hareket açıklığını korur ve kas gerginliğini azaltır.
             Her egzersizi 20-30 saniye tutun, 2-3 kez tekrarlayın.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {stretchingExercises.map((exercise, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-md border-l-4 border-green-500 hover:shadow-lg transition-shadow">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-lg font-bold text-gray-900">{exercise}</h3>
-                  <span className="text-2xl">🧘</span>
+              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="relative h-48 bg-gray-100">
+                  <Image
+                    src={exercise.image}
+                    alt={exercise.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                 </div>
-                <p className="text-gray-600 text-sm">
-                  Bu kas grubunun esnekliğini artırır ve hareket açıklığını korur.
-                </p>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{exercise.name}</h3>
+                  <p className="text-gray-600 text-sm mb-3">{exercise.description}</p>
+                  <div className="flex items-center text-sm">
+                    <span className="text-green-600 font-semibold">20-30 saniye x 2-3</span>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
         </section>
 
         {/* Aerobic Exercises */}
-        <section className="max-w-4xl mx-auto mb-12">
+        <section className="max-w-6xl mx-auto mb-12">
           <h2 className="section-title">🚴 Aerobik Egzersizler</h2>
           <p className="text-gray-700 mb-8">
-            Düşük etkili kardiyo egzersizler kardiyovasküler sağlığı iyileştirir ve kilo kontrolüne yardımcı olur.
+            Düşük etkili kardiyo egzersizler kardiyovasküler sağılığı iyileştirir ve kilo kontrolüne yardımcı olur.
             Haftada 150 dakika (5 gün × 30 dakika) hedefleyin.
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {aerobicExercises.map((exercise, index) => (
-              <div key={index} className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg p-6 text-white text-center hover:from-purple-600 hover:to-purple-700 transition-all">
-                <div className="text-3xl mb-3">🚴</div>
-                <div className="font-semibold">{exercise}</div>
+              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="relative h-48 bg-gray-100">
+                  <Image
+                    src={exercise.image}
+                    alt={exercise.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{exercise.name}</h3>
+                  <p className="text-gray-600 text-sm">{exercise.description}</p>
+                </div>
               </div>
             ))}
           </div>
         </section>
 
         {/* Neuromuscular Exercises */}
-        <section className="max-w-4xl mx-auto mb-12">
+        <section className="max-w-6xl mx-auto mb-12">
           <h2 className="section-title">⚡ Nöromusküler Egzersizler</h2>
           <p className="text-gray-700 mb-8">
             Günlük yaşam aktivitelerini simüle eden egzersizler fonksiyonel kapasiteyi geliştirir.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {neuromuscularExercises.map((exercise, index) => (
-              <div key={index} className="bg-white rounded-lg p-5 shadow-md hover:shadow-lg transition-shadow border-l-4 border-orange-500">
-                <div className="flex items-center">
-                  <span className="text-2xl mr-4">⚡</span>
-                  <h3 className="font-bold text-gray-900">{exercise}</h3>
+              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="relative h-48 bg-gray-100">
+                  <Image
+                    src={exercise.image}
+                    alt={exercise.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{exercise.name}</h3>
+                  <p className="text-gray-600 text-sm">{exercise.description}</p>
                 </div>
               </div>
             ))}
@@ -246,19 +383,28 @@ export default function EgzersizlerPage() {
         </section>
 
         {/* Balance Exercises */}
-        <section className="max-w-4xl mx-auto mb-12">
+        <section className="max-w-6xl mx-auto mb-12">
           <h2 className="section-title">⚖️ Denge ve Propriosepsiyon Egzersizleri</h2>
           <p className="text-gray-700 mb-8">
             Denge egzersizleri düşme riskini azaltır ve eklem stabilitesini artırır.
             Güvenli bir ortamda başlayın, yavaşça ilerleyin.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {balanceExercises.map((exercise, index) => (
-              <div key={index} className="bg-white rounded-lg p-5 shadow-md hover:shadow-lg transition-shadow border-l-4 border-blue-500">
-                <div className="flex items-center">
-                  <span className="text-2xl mr-4">⚖️</span>
-                  <h3 className="font-bold text-gray-900">{exercise}</h3>
+              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="relative h-48 bg-gray-100">
+                  <Image
+                    src={exercise.image}
+                    alt={exercise.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{exercise.name}</h3>
+                  <p className="text-gray-600 text-sm">{exercise.description}</p>
                 </div>
               </div>
             ))}
@@ -266,7 +412,7 @@ export default function EgzersizlerPage() {
         </section>
 
         {/* Water Exercises */}
-        <section className="max-w-4xl mx-auto mb-12">
+        <section className="max-w-6xl mx-auto mb-12">
           <div className="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg p-8 text-white">
             <div className="flex items-center mb-6">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mr-4">
@@ -283,10 +429,21 @@ export default function EgzersizlerPage() {
               Özellikle ağrılı hastalar ve obez bireyler için idealdir.
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {waterExercises.map((exercise, index) => (
-                <div key={index} className="bg-white/10 rounded-lg p-3 text-center">
-                  <div className="text-sm font-medium">{exercise}</div>
+                <div key={index} className="bg-white/10 rounded-lg overflow-hidden">
+                  <div className="relative h-32">
+                    <Image
+                      src={exercise.image}
+                      alt={exercise.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="p-3">
+                    <div className="text-sm font-medium">{exercise.name}</div>
+                  </div>
                 </div>
               ))}
             </div>

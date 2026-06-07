@@ -34,3 +34,5 @@ next-env.d.ts
 
 # Lockfiles (optional, keep package-lock.json)
 # package-lock.json
+
+.vercel

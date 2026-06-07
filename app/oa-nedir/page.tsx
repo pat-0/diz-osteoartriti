@@ -8,11 +8,11 @@ export default function OaNedirPage() {
             Temel Bilgiler
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Osteoartrit (OA) Nedir?
+            DİZ OSTEOARTRİTİ (OA)
           </h1>
           <p className="text-xl text-gray-700 leading-relaxed">
-            Diz kireçlenmesi olarak da bilinen osteoartrit, eklem kıkırdağının zamanla yıpranması ve bozulması
-            sonucu gelişen kronik bir hastalıktır.
+            Osteoartrit, eklem kıkırdağının zamanla aşınması ve eklemde yapısal değişikliklerin oluşmasıyla
+            karakterize dejeneratif bir eklem hastalığıdır.
           </p>
         </div>
 
@@ -36,6 +36,68 @@ export default function OaNedirPage() {
               "Kireçlenme" olarak da bilinse de, aslında kireç birikimi değil, kıkırdak yıkımı ve kemik
               değişiklikleri söz konusudur.
             </p>
+          </div>
+        </section>
+
+        {/* Symptoms Section - From DOCX (2) */}
+        <section className="max-w-4xl mx-auto mb-12">
+          <h2 className="section-title">Diz OA'sının Belirtileri</h2>
+          <p className="text-gray-700 mb-8">
+            Diz osteoartriti olan kişilerde aşağıdaki belirtiler görülebilir:
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              {
+                title: "Diz Ağrısı",
+                description: "Hareketle artan, istirahatte geçen ağrı. Başlangıçta sadece aktivite sırasında, ilerleyen dönemde dinlenkende de olabilir.",
+                icon: "🔴",
+                severity: "Yaygın"
+              },
+              {
+                title: "Hareket Sertliği",
+                description: "Hareket sırasında veya sonrasında sertlik hissi. Sabah tutukluğu genellikle 30 dakikadan kısa sürer.",
+                icon: "😣",
+                severity: "Sık"
+              },
+              {
+                title: "Hareket Açıklığında Azalma",
+                description: "Dizi tam açamama veya tam büzülememe. Merdiven inip çıkmak zorlaşabilir.",
+                icon: "📏",
+                severity: "İlerleyen"
+              },
+              {
+                title: "Merdivende Zorluk",
+                description: "Merdiven çıkma ve yürümede belirgin zorluk. Diz gücünde azalma hissedilir.",
+                icon: "🪜",
+                severity: "İlerleyen"
+              },
+              {
+                title: "Krepitasyon (Ses Gelmesi)",
+                description: "Diz hareket ettirildiğinde duyulan çatırtı sesi. Kıkırdak yüzeyinin bozulmasına bağlı.",
+                icon: "🔊",
+                severity: "Yaygın"
+              },
+              {
+                title: "Şekil Bozukluğu",
+                description: "İleri evrelerde dizde şekil bozukluğu, O bacağı oluşumu. Eklem deformitesi gelişebilir.",
+                icon: "🦵",
+                severity: "İleri Evre"
+              },
+            ].map((symptom, index) => (
+              <div key={index} className="bg-white rounded-lg p-6 shadow-md border-l-4 border-primary hover:shadow-lg transition-shadow">
+                <div className="flex items-start mb-3">
+                  <span className="text-3xl mr-3">{symptom.icon}</span>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold text-gray-900 mb-1">{symptom.title}</h3>
+                    <span className="inline-block px-2 py-1 bg-primary-100 text-primary text-xs font-semibold rounded">
+                      {symptom.severity}
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 text-sm">{symptom.description}</p>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -96,55 +158,6 @@ export default function OaNedirPage() {
               <div key={index} className={`${factor.color} rounded-lg p-4`}>
                 <div className="font-bold text-gray-900 mb-1">{factor.name}</div>
                 <div className="text-sm opacity-80">{factor.description}</div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Symptoms */}
-        <section className="max-w-4xl mx-auto mb-12">
-          <h2 className="section-title">Belirtiler ve Bulgular</h2>
-          <div className="space-y-4">
-            {[
-              {
-                title: "Ağrı",
-                description: "Hareketle artan, istirahatte geçen ağrı. Başlangıçta sadece aktivite sırasında, ilerleyen dönemde dinlenkende de olabilir.",
-                severity: "Yaygın"
-              },
-              {
-                title: "Tutukluk",
-                description: "Sabah tutukluğu genellikle 30 dakikadan kısa sürer. Uzun süre oturduktan sonra hissedilebilir.",
-                severity: "Sık"
-              },
-              {
-                title: "Hareket Kısıtlılığı",
-                description: "Dizi tam açamama veya tam büzülememe. Merdiven inip çıkmak zorlaşabilir.",
-                severity: "İlerleyen"
-              },
-              {
-                title: "Krepitasyon",
-                description: "Diz hareket ettirildiğinde duyulan çatırtı sesi.",
-                severity: "Yaygın"
-              },
-              {
-                title: "Eklem Şişliği",
-                description: "Dizin şiş ve hassas olması. Bazen sıvı birikimi olabilir.",
-                severity: "Sık"
-              },
-              {
-                title: "Kas Zayıflığı",
-                description: "Özellikle quadriceps kas zayıflığı sık görülür ve durumu kötüleştirir.",
-                severity: "Yaygın"
-              },
-            ].map((symptom, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-md">
-                <div className="flex items-start justify-between mb-2">
-                  <h3 className="text-xl font-bold text-gray-900">{symptom.title}</h3>
-                  <span className="px-3 py-1 bg-primary-100 text-primary text-xs font-semibold rounded-full">
-                    {symptom.severity}
-                  </span>
-                </div>
-                <p className="text-gray-600">{symptom.description}</p>
               </div>
             ))}
           </div>
