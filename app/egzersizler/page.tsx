@@ -7,7 +7,7 @@ export default function EgzersizlerPage() {
       id: 1,
       name: "Düz Bacak Kaldırma",
       englishName: "Straight Leg Raise",
-      image: "/images/exercises/11.jpg",
+      image: "/images/exercises/duz-bacak.jpeg",
       description: "Sırt üstü yatarak bacağı düz tutarak kaldırma",
       instructions: "Sırt üstü yatın, bir bacakı bükülü tutarken diğerini düz olarak 30-45 derece kaldırın ve yavaşça indirin.",
       sets: "3 set x 10-12 tekrar"
@@ -16,7 +16,7 @@ export default function EgzersizlerPage() {
       id: 2,
       name: "Kısa Ark Quadriceps",
       englishName: "Short Arc Quad",
-      image: "/images/exercises/2.jpg",
+      image: "/images/exercises/ark-quad.jpeg",
       description: "Diz altına havlu koyarak kısa bir hareketle quadriceps kasını kuvvetlendirme",
       instructions: "Sırt üstü yatın, diz altına havlu yerleştirin. Dizi düzleştirirken quadricepsi kasın ve 5 saniye tutun.",
       sets: "3 set x 10-12 tekrar"
@@ -25,7 +25,7 @@ export default function EgzersizlerPage() {
       id: 3,
       name: "Otururken Diz Ekstansiyonu",
       englishName: "Seated Knee Extension",
-      image: "/images/exercises/5.jpg",
+      image: "/images/exercises/ekstansiyon.jpeg",
       description: "Oturarak bacağı dizden düzleştirme hareketi",
       instructions: "Oturur pozisyonda bacağı düzleştirin, 2-3 saniye tutun ve yavaşça indirin.",
       sets: "3 set x 10-12 tekrar"
@@ -34,7 +34,7 @@ export default function EgzersizlerPage() {
       id: 4,
       name: "Köprü Kurma",
       englishName: "Bridge Exercise",
-      image: "/images/exercises/14.jpg",
+      image: "/images/exercises/kopru.jpeg",
       description: "Sırtüstü yatarak kalçayı yukarı kaldırma",
       instructions: "Sırt üstü yatın, dizleri bükün. Kalçayı yukarı kaldırın, 2-3 saniye tutun ve yavaşça indirin.",
       sets: "3 set x 10-12 tekrar"
@@ -43,7 +43,7 @@ export default function EgzersizlerPage() {
       id: 5,
       name: "Duvar Kaydırma",
       englishName: "Wall Squat",
-      image: "/images/exercises/17.jpg",
+      image: "/images/exercises/kaydirma.jpeg",
       description: "Duvara yaslanarak çömelme hareketi",
       instructions: "Duvara yaslanın, ayakları öne alın. Yavaşça çömelin, 5-10 saniye tutun ve kalkın.",
       sets: "3 set x 5-10 saniye tutuş"
@@ -52,7 +52,7 @@ export default function EgzersizlerPage() {
       id: 6,
       name: "Kalça Abdüksiyonu",
       englishName: "Hip Abduction",
-      image: "/images/exercises/8.jpg",
+      image: "/images/exercises/abduks.jpeg",
       description: "Yan yatarak bacağı yana kaldırma",
       instructions: "Yan yatın, üst bacağı yana doğru kaldırın, 2-3 saniye tutun ve yavaşça indirin.",
       sets: "3 set x 10-12 tekrar (her bacak)"
@@ -177,43 +177,38 @@ export default function EgzersizlerPage() {
       name: "Denge Tahtası",
       image: "/images/exercises/80.jpg",
       description: "Denge tahtası çalışmaları"
-    },
-    {
-      name: "Top Yakalama/Atma",
-      image: "/images/exercises/83.webp",
-      description: "Motor kontrol egzersizi"
     }
   ];
 
   const waterExercises = [
     {
       name: "Havuz İçinde Yürüme",
-      image: "/images/exercises/86.jpg",
+      image: "/images/exercises/havuz-ici.jpeg",
       description: "Su içinde yürüme"
     },
     {
       name: "Su İçinde Diz Çekme",
-      image: "/images/exercises/89.jpeg",
+      image: "/images/exercises/diz-cekme.jpeg",
       description: "Su içinde bacak hareketi"
     },
     {
       name: "Su İçinde Kalça Açma-Kapama",
-      image: "/images/exercises/92.jpg",
+      image: "/images/exercises/kalca-ac.jpeg",
       description: "Su içinde kalça egzersizi"
     },
     {
       name: "Su İçinde Mini Squat",
-      image: "/images/exercises/95.jpg",
+      image: "/images/exercises/92.jpg",
       description: "Su içinde çömelme"
     },
     {
       name: "Su İçinde Bisiklet Hareketi",
-      image: "/images/exercises/98.jpg",
+      image: "/images/exercises/95.jpg",
       description: "Su içinde bisiklet"
     },
     {
       name: "Su Direncine Karşı",
-      image: "/images/exercises/86.jpg",
+      image: "/images/exercises/98.jpg",
       description: "Bacak direnç egzersizleri"
     }
   ];
