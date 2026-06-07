@@ -14,10 +14,10 @@ export default function OaNedirPage() {
         </div>
 
         {/* Symptoms Section - From DOCX (2) */}
-        <section className="max-w-4xl mx-auto mb-12">
-          <h2 className="section-title">Belirtileri</h2>
+        <section className="max-w-2xl mx-auto mb-12">
+          <h2 className="section-title text-left">Belirtiler</h2>
 
-          <div className="max-w-2xl mx-auto space-y-4">
+          <div className="space-y-4">
             {[
               "Diz ağrısı (özellikle hareketle artan)",
               "Sabah tutukluğu (genellikle 30 dakikadan kısa)",
@@ -38,10 +38,10 @@ export default function OaNedirPage() {
         </section>
 
         {/* Risk Factors */}
-        <section className="max-w-4xl mx-auto mb-12">
-          <h2 className="section-title">Risk Faktörleri</h2>
+        <section className="max-w-2xl mx-auto mb-12">
+          <h2 className="section-title text-left">Risk Faktörleri</h2>
 
-          <div className="max-w-2xl mx-auto space-y-4">
+          <div className="space-y-4">
             {[
               "İleri yaş",
               "Obezite",
