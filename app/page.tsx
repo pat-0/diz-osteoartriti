@@ -55,7 +55,7 @@ export default function HomePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">OA Nedir?</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Osteoartrit Nedir?</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Osteoartritin tanımı, gelişimi, risk faktörleri ve belirtileri hakkında kapsamlı bilgi.
                 </p>
@@ -90,90 +90,6 @@ export default function HomePage() {
                   Ağrıyı azaltan, hareketi geliştiren ve kas kuvvetini artıran etkili egzersizler.
                 </p>
               </div>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Treatment Overview Section */}
-      <section className="py-16 bg-gradient-to-b from-background to-white">
-        <div className="container mx-auto px-4">
-          <h2 className="section-title text-center">Tedavi Yaklaşımları</h2>
-          <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
-            Diz osteoartriti yönetiminde ortopedi ve fizik tedavi iş birliği ile en iyi sonuçlar elde edilir.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Ortopedi */}
-            <div className="info-card">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900">Ortopedi</h3>
-              </div>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  Tanı ve radyolojik değerlendirme
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  Farmakolojik tedavi
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  Eklem içi enjeksiyonlar
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  Cerrahi tedavi seçenekleri
-                </li>
-              </ul>
-            </div>
-
-            {/* FTR */}
-            <div className="info-card">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900">Fizik Tedavi</h3>
-              </div>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start">
-                  <span className="text-accent mr-2">•</span>
-                  Fizik tedavi modaliteleri
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2">•</span>
-                  Egzersiz tedavisi
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2">•</span>
-                  Manuel tedapi teknikleri
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2">•</span>
-                  Hasta eğitimi ve yaşam tarzı
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <Link
-              href="/tedavi"
-              className="inline-flex items-center px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-accent-600 transition-colors shadow-md"
-            >
-              Detaylı Bilgi Al
-              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
             </Link>
           </div>
         </div>
