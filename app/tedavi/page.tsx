@@ -84,8 +84,9 @@ export default function TedaviPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-white py-12">
-      <div className="container mx-auto px-4">
+    <div className="relative min-h-screen py-12 bg-cover bg-center bg-fixed bg-no-repeat" style={{ backgroundImage: "url('/images/oa-tedavi-bg.jpeg')" }}>
+      <div className="absolute inset-0 bg-white/70"></div>
+      <div className="relative container mx-auto px-4">
         {/* Page Header */}
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
