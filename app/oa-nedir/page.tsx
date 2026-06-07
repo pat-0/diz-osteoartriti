@@ -1,7 +1,8 @@
 export default function OaNedirPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-white py-12">
-      <div className="container mx-auto px-4">
+    <div className="relative min-h-screen py-12 bg-cover bg-center bg-fixed bg-no-repeat" style={{ backgroundImage: "url('/images/oa-nedir-bg.webp')" }}>
+      <div className="absolute inset-0 bg-white/70"></div>
+      <div className="relative container mx-auto px-4">
         {/* Page Header */}
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -121,29 +122,6 @@ export default function OaNedirPage() {
           </div>
         </section>
 
-        {/* Next Steps */}
-        <section className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-primary to-accent rounded-lg p-8 text-white text-center">
-            <h2 className="text-2xl font-bold mb-4">Sonraki Adımlar</h2>
-            <p className="mb-6 opacity-90">
-              Diz OA tanısından sonra tedavi seçeneklerini öğrenin ve egzersiz programınızı oluşturun.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/tedavi"
-                className="px-6 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Tedavi Yöntemleri
-              </a>
-              <a
-                href="/egzersizler"
-                className="px-6 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors"
-              >
-                Egzersiz Programı
-              </a>
-            </div>
-          </div>
-        </section>
       </div>
     </div>
   );
