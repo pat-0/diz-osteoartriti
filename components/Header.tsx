@@ -11,8 +11,6 @@ export default function Header() {
     { name: "OA Nedir?", href: "/oa-nedir" },
     { name: "Tedavi", href: "/tedavi" },
     { name: "Egzersizler", href: "/egzersizler" },
-    { name: "Multidisipliner", href: "/multidisipliner" },
-    { name: "Hastalar İçin", href: "/hastalar-icin" },
   ];
 
   return (

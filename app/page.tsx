@@ -142,16 +142,16 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/hastalar-icin"
+              href="/egzersizler"
               className="px-8 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
             >
-              Hastalar İçin Rehber
+              Egzersiz Programı
             </Link>
             <Link
-              href="/multidisipliner"
+              href="/tedavi"
               className="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors"
             >
-              Multidisipliner Yaklaşım
+              Tedavi Yöntemleri
             </Link>
           </div>
         </div>
