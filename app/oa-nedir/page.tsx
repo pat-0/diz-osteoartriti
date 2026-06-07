@@ -4,98 +4,33 @@ export default function OaNedirPage() {
       <div className="container mx-auto px-4">
         {/* Page Header */}
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <div className="inline-block px-4 py-2 bg-blue-100 text-primary rounded-full text-sm font-semibold mb-4">
-            Temel Bilgiler
-          </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             DİZ OSTEOARTRİTİ (OA)
           </h1>
-          <p className="text-xl text-gray-700 leading-relaxed">
-            Osteoartrit, eklem kıkırdağının zamanla aşınması ve eklemde yapısal değişikliklerin oluşmasıyla
-            karakterize dejeneratif bir eklem hastalığıdır.
+          <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
+            Osteoartrit, eklem kıkırdağının zamanla aşınması ve eklemde yapısal değişikliklerin oluşmasıyla karakterize dejeneratif bir eklem hastalığıdır.
           </p>
         </div>
 
-        {/* What is OA Section */}
-        <section className="max-w-4xl mx-auto mb-12">
-          <div className="info-card">
-            <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h2 className="text-2xl font-bold text-gray-900">Osteoartritin Tanımı</h2>
-            </div>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Osteoartrit (OA), eklemleri etkileyen en yaygın artrit türüdür. Diz OA'sında, diz eklemi kıkırdağı
-              zamanla incelir ve aşınır. Bu durum kemiklerin birbirine sürtünmesine neden olur ve ağrı, şişlik
-              ile hareket kısıtlılığına yol açar.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              "Kireçlenme" olarak da bilinse de, aslında kireç birikimi değil, kıkırdak yıkımı ve kemik
-              değişiklikleri söz konusudur.
-            </p>
-          </div>
-        </section>
-
         {/* Symptoms Section - From DOCX (2) */}
         <section className="max-w-4xl mx-auto mb-12">
-          <h2 className="section-title">Diz OA'sının Belirtileri</h2>
-          <p className="text-gray-700 mb-8">
-            Diz osteoartriti olan kişilerde aşağıdaki belirtiler görülebilir:
-          </p>
+          <h2 className="section-title">Belirtileri</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="max-w-2xl mx-auto space-y-4">
             {[
-              {
-                title: "Diz Ağrısı",
-                description: "Hareketle artan, istirahatte geçen ağrı. Başlangıçta sadece aktivite sırasında, ilerleyen dönemde dinlenkende de olabilir.",
-                icon: "🔴",
-                severity: "Yaygın"
-              },
-              {
-                title: "Hareket Sertliği",
-                description: "Hareket sırasında veya sonrasında sertlik hissi. Sabah tutukluğu genellikle 30 dakikadan kısa sürer.",
-                icon: "😣",
-                severity: "Sık"
-              },
-              {
-                title: "Hareket Açıklığında Azalma",
-                description: "Dizi tam açamama veya tam büzülememe. Merdiven inip çıkmak zorlaşabilir.",
-                icon: "📏",
-                severity: "İlerleyen"
-              },
-              {
-                title: "Merdivende Zorluk",
-                description: "Merdiven çıkma ve yürümede belirgin zorluk. Diz gücünde azalma hissedilir.",
-                icon: "🪜",
-                severity: "İlerleyen"
-              },
-              {
-                title: "Krepitasyon (Ses Gelmesi)",
-                description: "Diz hareket ettirildiğinde duyulan çatırtı sesi. Kıkırdak yüzeyinin bozulmasına bağlı.",
-                icon: "🔊",
-                severity: "Yaygın"
-              },
-              {
-                title: "Şekil Bozukluğu",
-                description: "İleri evrelerde dizde şekil bozukluğu, O bacağı oluşumu. Eklem deformitesi gelişebilir.",
-                icon: "🦵",
-                severity: "İleri Evre"
-              },
+              "Diz ağrısı (özellikle hareketle artan)",
+              "Sabah tutukluğu (genellikle 30 dakikadan kısa)",
+              "Hareket kısıtlılığı",
+              "Eklemden ses gelmesi (krepitasyon)",
+              "Merdiven çıkma veya çömelmede zorlanma",
+              "Kas güçsüzlüğü",
+              "İleri evrede dizde şekil bozukluğu (varus veya valgus deformitesi)",
             ].map((symptom, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-md border-l-4 border-primary hover:shadow-lg transition-shadow">
-                <div className="flex items-start mb-3">
-                  <span className="text-3xl mr-3">{symptom.icon}</span>
-                  <div className="flex-1">
-                    <h3 className="text-lg font-bold text-gray-900 mb-1">{symptom.title}</h3>
-                    <span className="inline-block px-2 py-1 bg-primary-100 text-primary text-xs font-semibold rounded">
-                      {symptom.severity}
-                    </span>
-                  </div>
-                </div>
-                <p className="text-gray-600 text-sm">{symptom.description}</p>
+              <div key={index} className="flex items-start bg-white rounded-lg p-4 shadow-sm border-l-4 border-primary">
+                <span className="w-7 h-7 bg-blue-100 text-primary rounded-full flex items-center justify-center text-sm font-bold mr-3 shrink-0">
+                  {index + 1}
+                </span>
+                <span className="text-gray-700 leading-relaxed">{symptom}</span>
               </div>
             ))}
           </div>

@@ -72,7 +72,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Tedavi Yöntemleri</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Ortopedi ve fizik tedavi iş birliği ile konservatif ve cerrahi tedavi seçenekleri.
+                  Osteoartritin (OA) Fizyoterapi ve Rehabilitasyon Programlarıyla Tedavisi
                 </p>
               </div>
             </Link>
