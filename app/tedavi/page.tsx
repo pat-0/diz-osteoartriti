@@ -23,7 +23,7 @@ export default function TedaviPage() {
         },
         {
           name: "Germe Egzersizleri",
-          items: ["Hamstring", "Kuadriseps", "Gastroknemius ve soleus", "Kalça fleksörleri"],
+          items: ["Hamstring", "Quadriseps", "Gastroknemius ve soleus", "Kalça fleksörleri"],
         },
         {
           name: "Eklem Hareket Açıklığı Egzersizleri",
